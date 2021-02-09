@@ -43,7 +43,7 @@ function App() {
   
     // React Router to route the html views 
     //Global Auth Context to pass jwt
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
       
         <AuthContext.Provider value={{ jwt, setJwt }}>
         <div className="App">
